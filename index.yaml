@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   laravel-app:
   - apiVersion: v2
+    appVersion: 10.0.0
+    created: "2024-08-12T05:11:52.097157362Z"
+    description: A Helm chart for Laravel app project
+    digest: 927003d2fd6e7e8ffbe70256c0542d424e9afb2e9255bf679487f9b14519bd9e
+    name: laravel-app
+    type: application
+    urls:
+    - https://github.com/bolsel/helm-charts/releases/download/laravel-app-1.0.0/laravel-app-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
     appVersion: 1.16.0
     created: "2024-08-12T05:00:34.275651247Z"
     description: A Helm chart for Kubernetes
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/bolsel/helm-charts/releases/download/laravel-app-0.1.0/laravel-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-12T05:00:34.275675994Z"
+generated: "2024-08-12T05:11:52.097169225Z"
