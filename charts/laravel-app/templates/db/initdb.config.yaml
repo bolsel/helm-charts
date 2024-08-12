@@ -1,0 +1,9 @@
+{{- if .Values.db.initdbFile -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "laravel-app.db.fullname" .}}-initdb
+data:
+  initdb.sql: |
+  {{- .Values.db.initdbFile | nindent 4 }}
+{{- end }}

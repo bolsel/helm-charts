@@ -1,0 +1,10 @@
+{{- if .Values.app.registryCredentials -}}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ include "laravel-app.app.fullname" . }}-regcred
+type: kubernetes.io/dockerconfigjson
+data:
+  .dockerconfigjson: |
+    {{- .Values.app.registryCredentials | b64enc | nindent 4 }}
+{{- end }}

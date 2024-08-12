@@ -1,0 +1,17 @@
+{{- if .Values.db.enabled -}}
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "laravel-app.db.fullname" . }}-test-connection"
+  labels:
+    {{- include "laravel-app.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "laravel-app.db.fullname" . }}:{{ .Values.db.service.port }}']
+  restartPolicy: Never
+{{- end }}
