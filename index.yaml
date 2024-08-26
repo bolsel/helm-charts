@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  code-server:
+  - apiVersion: v2
+    appVersion: 4.92.2
+    created: "2024-08-26T01:22:15.680583933Z"
+    description: A Helm chart for coder/code-server
+    digest: a818ae9451941c3d3053d3b32b523ebcfa713bddd12491ffea5544736a0b5fbd
+    name: code-server
+    type: application
+    urls:
+    - https://github.com/bolsel/helm-charts/releases/download/code-server-3.23.0/code-server-3.23.0.tgz
+    version: 3.23.0
   laravel-app:
   - apiVersion: v2
     appVersion: 10.0.0
@@ -21,4 +32,4 @@ entries:
     urls:
     - https://github.com/bolsel/helm-charts/releases/download/laravel-app-0.1.0/laravel-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-12T05:11:52.097169225Z"
+generated: "2024-08-26T01:22:15.680595775Z"
