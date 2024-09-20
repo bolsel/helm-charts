@@ -32,4 +32,15 @@ entries:
     urls:
     - https://github.com/bolsel/helm-charts/releases/download/laravel-app-0.1.0/laravel-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-26T01:22:15.680595775Z"
+  supabase:
+  - apiVersion: v2
+    created: "2024-09-20T06:36:14.066810139Z"
+    description: The open source Firebase alternative.
+    digest: 0cacb039943c26ce4ac63ee94c65182c817157a3fbf3d5b67e8e36f143a54281
+    icon: https://avatars.githubusercontent.com/u/54469796?s=280&v=4
+    name: supabase
+    type: application
+    urls:
+    - https://github.com/bolsel/helm-charts/releases/download/supabase-0.1.3/supabase-0.1.3.tgz
+    version: 0.1.3
+generated: "2024-09-20T06:36:14.066826601Z"
